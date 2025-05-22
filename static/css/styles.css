@@ -209,6 +209,8 @@ li::before {
   left: 0;
 }
 
+
+/* Sidebar Styling */
 .sidebar {
   position: fixed;
   right: 0;
@@ -262,7 +264,7 @@ z-index: 999;
   cursor: pointer;
 }
 
-/* Responsiveness for Tabs */
+/* Responsiveness for Tab */
 
 @media screen and (max-width: 990px) {
   .main {
