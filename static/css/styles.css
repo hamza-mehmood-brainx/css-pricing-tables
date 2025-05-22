@@ -6,7 +6,8 @@
   --card-background-color: #ffffff;
   --card-border-color: #e8e8e8;
   --heading-color: #3b3663;
-  --button-bg-color: rgba(170, 170, 170, 0.1);
+  --button-bg-color: rgba(171, 171, 171, 0.1);
+  --white-color: white;
 }
 
 body {
@@ -43,7 +44,6 @@ body {
 .header h1 {
   font-size: 40px;
   font-weight: 400;
-  margin-top: px;
   color: var(--heading-color);
 }
 
@@ -123,7 +123,7 @@ row-gap: 20px;
 }
 
 hr{
-    color:red;
+
     width: 100%;
     border: 1px solid var(--card-border-color);
     margin-bottom: 40px;
@@ -169,7 +169,7 @@ li::before {
 
 .button button:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -190,15 +190,29 @@ li::before {
 position: absolute;
  top: 0;
  left: 0;
- background-color: var(--primary-color);
  font-size:20px;
-  color: white;
-  padding: 10px;
+  color: var(--white-color);
+  padding: 8px;
+  font-weight: 600;
+
+}
+
+.highlight::before{
+    content: "";
+   width: 0;
+	height: 0;
+
+	border-right: 65px solid transparent;
+	border-top: 60px solid var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+
 
 }
 
 
-/* Responsiveness for Tablets */
+/* Responsiveness for Tabs */
 
 @media  screen and (max-width: 990px) {
   .main{
@@ -211,14 +225,14 @@ position: absolute;
     
 }
 
-
+/* Responsiveness for Mobile */
 @media  screen and (max-width: 768px) {
   .main{
     padding: 20px 0;
   }
 
   .header h1{
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   .cards-container{
@@ -226,4 +240,7 @@ position: absolute;
     margin: 0 10px;
   }
     
+  .footer-note p{
+    padding: 10px;
+  }
 }
