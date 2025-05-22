@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+:root {
+  --primary-color: #0bbf53;
+  --main-background-color: #f8f9fa;
+  --text-color: #75787e;
+  --card-background-color: #ffffff;
+  --card-border-color: #e8e8e8;
+  --heading-color: #3b3663;
+  --button-bg-color: rgba(170, 170, 170, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  row-gap: 5rem;
+  background-color: var(--main-background-color);
+}
+
+.header,
+.footer-note {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1,
+.footer-note p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: px;
+  color: var(--heading-color);
+}
+
+.footer-note p {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+row-gap: 20px;
+  column-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 3px solid var(--card-border-color);
+  border-radius: 5px;
+  background-color: var(--card-background-color);
+  padding: 40px 30px;
+  width: 250px;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: translate(0px, -20px);
+}
+
+/* Single Card Styling */
+
+.name {
+  font-size: 30px;
+  font-weight: 600;
+  font-weight: bold;
+  color: var(--heading-color);
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0;
+  padding-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.badge {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+ margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: -15px;
+  z-index: 1;
+
+}
+
+.badge span {
+  border: 1px solid var(--card-border-color);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--card-background-color);
+}
+
+hr{
+    color:red;
+    width: 100%;
+    border: 1px solid var(--card-border-color);
+    margin-bottom: 40px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+
+.features li {
+  text-align: start;
+  color: var(--text-color);
+  font-weight: 400;
+  padding: 8px 0;
+}
+
+li::before {
+  content: ">";
+  color: var(--primary-color);
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.button button {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-color);
+  background-color: var(--button-bg-color);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+}
+
+.button button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Highlighted card */
+
+.highlight {
+  border-color: var(--primary-color);
+  position: relative;
+}
+.highlight .button button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cards-container i{
+position: absolute;
+ top: 0;
+ left: 0;
+ background-color: var(--primary-color);
+ font-size:20px;
+  color: white;
+  padding: 10px;
+
+}
