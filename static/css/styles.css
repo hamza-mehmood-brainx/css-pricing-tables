@@ -145,7 +145,8 @@ hr {
 }
 
 li::before {
-  content: ">";
+  font-family: "FontAwesome";
+    content: "\f105";
   color: var(--primary-color);
   margin-right: 10px;
   font-weight: 600;
@@ -196,6 +197,7 @@ li::before {
 }
 
 .highlight::before {
+
   content: "";
   width: 0;
   height: 0;
