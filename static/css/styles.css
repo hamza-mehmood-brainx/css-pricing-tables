@@ -283,11 +283,7 @@ li::before {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .cards-container {
-    max-width: 1140px;
-  }
-}
+
 
 @media screen and (max-width: 992px) {
   .main {
