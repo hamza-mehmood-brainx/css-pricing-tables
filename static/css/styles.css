@@ -313,7 +313,7 @@ li::before {
 
 @media screen and (max-width: 480px) {
   .cards-container {
-    margin: 40px auto;
+    margin: 20px auto;
   }
 
   .header h1 {
