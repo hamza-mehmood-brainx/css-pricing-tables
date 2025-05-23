@@ -325,4 +325,7 @@ row-gap: 40px;
   .name{
     font-size: 25px;
   }
+  .cards-container .card{
+    width: 77%;
+  }
 }
