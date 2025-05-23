@@ -2,7 +2,7 @@
 :root {
   --primary-color: #0bbf53;
   --main-background-color: #f8f9fa;
-  --text-color: #75787e;
+  --text-color: rgba(22, 28, 45, 0.7);
   --card-background-color: #ffffff;
   --card-border-color: #e8e8e8;
   --heading-color: #3b3663;
@@ -312,6 +312,7 @@ li::before {
   .footer-note p {
     width: 80%;
     padding: 0 20px;
+    font-size: 17px;
   }
 }
 
