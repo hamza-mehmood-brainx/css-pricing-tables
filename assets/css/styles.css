@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
 :root {
   --primary-color: #0bbf53;
   --main-background-color: #f8f9fa;
@@ -14,11 +14,31 @@
   --footer-text-color: #797D87;
 }
 
+@font-face {
+  font-family: "Kumbh";
+  src: url("/assets/fonts/kumbh-sans-latin-400-normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Kumbh";
+  src: url("/assets/fonts/kumbh-sans-latin-600-normal.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kumbh";
+  src: url("/assets/fonts/kumbh-sans-latin-700-normal.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+  
 
 .main {
   display: grid;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh", sans-serif;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -35,7 +55,7 @@
   align-items: center;
 }
 .heading-wrapper .heading,
-.footer-note .copyright {
+.footer-note .copyright-text {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -44,21 +64,22 @@
 .heading-wrapper .heading {
   font-size: 40px;
   font-weight: 400;
+  font-family: 'Kumbh', sans-serif;
   color: var(--heading-color);
 }
 
-.footer-note .copyright {
+.footer-note .copyright-text {
   color: var(--footer-text-color);
   font-size: 18px;
   font-weight: 400;
 }
 
-.footer-note .copyright .footer-link {
+.footer-note .copyright-text .footer-link {
   text-decoration: none;
   color: var(--heading-color);
 }
 
-.footer-note .copyright .footer-link:hover {
+.footer-note .copyright-text .footer-link:hover {
   color: var(--primary-color);
 }
 .cards-container {
@@ -181,7 +202,7 @@
   border: none;
   padding: 12px 25px;
   border-radius: 7px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh", sans-serif;
 }
 
 .button-wrapper .button:hover {
@@ -299,7 +320,7 @@
     flex-direction: column;
     row-gap: 30px;
   }
-  .footer-note .copyright {
+  .footer-note .copyright-text {
     width: 80%;
     padding: 0 20px;
     font-size: 17px;
