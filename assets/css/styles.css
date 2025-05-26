@@ -27,21 +27,21 @@
   box-sizing: border-box;
 }
 
-.header,
+.heading-wrapper,
 .footer-note {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header .heading,
+.heading-wrapper .heading,
 .footer-note .copyright {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.header .heading {
+.heading-wrapper .heading {
   font-size: 40px;
   font-weight: 400;
   color: var(--heading-color);
@@ -314,7 +314,7 @@
     margin: 25px auto;
   }
 
-  .header .heading {
+  .heading-wrapper .heading {
     font-size: 35px;
   }
   .cards-container .card {
@@ -326,7 +326,7 @@
   .main{
     padding: 25px 0;
   }
-  .header .heading {
+  .header-wrapper .heading {
     font-size: 30px;
   }
 
