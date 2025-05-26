@@ -92,7 +92,7 @@ body {
   border-radius: 5px;
   background-color: var(--card-background-color);
   padding: 37px 25px;
-  width: 312px;
+  width: 314px;
   transition: transform 0.5s;
   box-sizing: border-box;
   row-gap: 2px;
@@ -126,10 +126,9 @@ body {
 }
 
 .badge {
-  font-size: 14px;
   font-weight: 600;
   color: var(--primary-color);
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: center;
   width: 100%;
   position: relative;
@@ -143,6 +142,8 @@ body {
   border-radius: 20px;
   text-align: center;
   background-color: var(--card-background-color);
+  font-weight: 700;
+  font-size: 14px;
 }
 
 hr {
@@ -171,14 +172,14 @@ li::before {
   content: "\f105";
   color: var(--primary-color);
   margin-right: 8px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .button {
   text-align: center;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .button button {
@@ -187,8 +188,10 @@ li::before {
   color: var(--primary-color);
   background-color: var(--button-bg-color);
   border: none;
-  padding: 13px 29px;
+  padding: 12px 25px;
   border-radius: 7px;
+  /* letter-spacing: 0.5px; */
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .button button:hover {
@@ -212,9 +215,9 @@ li::before {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 20px;
+  font-size: 19px;
   color: var(--white-color);
-  padding: 8px;
+  padding: 10px;
   font-weight: 600;
 }
 
@@ -224,7 +227,7 @@ li::before {
   height: 0;
 
   border-right: 65px solid transparent;
-  border-top: 60px solid var(--primary-color);
+  border-top: 64px solid var(--primary-color);
   position: absolute;
   top: 0;
   left: 0;
